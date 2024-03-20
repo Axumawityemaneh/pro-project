@@ -1,16 +1,73 @@
+*{
+  background-color: black;
+}
+.welcome{
+    background-color: blue;
+    color: red;
+     display: flex; 
+    list-style: none;
+    gap: 10%;
+    text-justify:center;
+    cursor: pointer;
 
+
+}
+#navbar{
+    background-color: blck;
+    border-radius: 5px;
+   text-decoration: none;
+    color: rgb(247, 28, 28);
+    display: flex;
+    gap: 40%;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    width: 50%;
+    text-justify:center;
+    white-space: nowrap;
+    
+margin: 2%;
+
+}
 .container img {
+    border:red;
     float: left;
-    margin-right: 20px;
-    border-radius: 50%;
+    margin-left: 50%;
+    border-radius: 5%;
+    cursor: pointer;
+    
+
   }
   
   .container span {
-    font-size: 20px;
-    margin-right: 15px;
+    background-color: blue;
+    cursor: pointer;
+
+
+  }
+  .container h4{
+    text-justify: ceenter;
+cursor: pointer;
+
+  }
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: red;
+    font-weight: bold;
+    border: 3px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
   }
   
-  @media (max-width: 500px){}
+  @media (max-width: 400px){}
     .container {
         text-align: center;
     }
@@ -20,17 +77,81 @@
         display: block;
     }
 
-    .welcome{
-        background-color:green;
-        color: white;
-         display: flex; 
-        list-style: none;
-        gap: 8%;
-        text-justify:center;
-        white-space: nowrap;
+
+    .big container{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex: row;
+        opacity: 0.7;
+  border-radius: 50%;
     
-    }
-    #welcome{
-        /* -ms-text-justify: auto;*/
     } 
+    .containerTab {
+      padding: 20px;
+      color: white;
+    }
     
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Closable button inside the image */
+    .closebtn {
+      float: right;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    
+
+    .button{
+background-color: blue;
+color: brown;
+cursor: pointer;
+border: none;
+border-radius: 5px;
+padding: 12px 20px;
+font-size: 16px;
+cursor: pointer;
+background-color: #282A35;
+color: white;
+position: relative;
+}
+
+.ribbon {
+width: 60px;
+font-size: 14px;
+padding: 4px;
+position: absolute;
+right: -25px;
+top: -12px;
+text-align: center;
+border-radius: 25px;
+transform: rotate(20deg);
+color: rgb(245, 6, 6);
+}
+.loader {
+    border: 16px solid pink;
+    border-radius: 50%;
+    border-top: 16px solid red;
+    border-bottom: 16px solid blue;
+    width: 12px;
+    height: 12px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+    }
